@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +15,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+.bold {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    font-size:30px;
+    margin:50px;
+}
+
+.text-container{
+ 
+  font-weight:600;
+  transition: transform 1s linear;
+}
+
+.text-container>span{
+  display:block;
+  opacity:0.4;
+  transform: scale(0.8);
+  transition:1s linear;
 }
